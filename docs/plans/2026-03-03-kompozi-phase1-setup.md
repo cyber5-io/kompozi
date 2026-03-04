@@ -1,7 +1,5 @@
 # Kompozi Phase 1: Project Setup & Core Architecture
 
-> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
-
 **Goal:** Set up the Kompozi CMS repo from scratch with Next.js + PayloadCMS + Docker + PostgreSQL, and build the core section system + theme engine that everything else builds on.
 
 **Architecture:** PayloadCMS 3.78 embedded in Next.js 15.5 app. Pages collection with a `layout` blocks field. Sections are the building blocks — each is a PayloadCMS block definition + React component + CSS module. A theme engine loads CSS variables and optional section style overrides from a theme directory. The starter theme provides a clean default look.

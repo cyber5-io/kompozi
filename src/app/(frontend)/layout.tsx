@@ -1,4 +1,5 @@
 import React from 'react'
+import '@/themes/starter/globals.css'
 
 export const metadata = {
   title: 'Kompozi',

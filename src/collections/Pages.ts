@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { sectionBlocks } from '@/core/sections'
 
 const formatSlug = (title: string): string => {
   return title
@@ -54,7 +55,7 @@ export const Pages: CollectionConfig = {
     {
       name: 'layout',
       type: 'blocks',
-      blocks: [],
+      blocks: sectionBlocks,
     },
     {
       name: 'meta',

@@ -1,6 +1,9 @@
 import React from 'react'
 import { getPayload } from 'payload'
 import config from '@payload-config'
+import { RenderSections } from '@/core/sections/RenderSections'
+import { ThemeProvider } from '@/core/theme/ThemeProvider'
+import { loadTheme } from '@/core/theme/loader'
 
 async function getHomePage() {
   try {
@@ -33,9 +36,13 @@ export default async function HomePage() {
     )
   }
 
+  const theme = await loadTheme()
+
   return (
-    <main>
-      <h1>{page.title}</h1>
-    </main>
+    <ThemeProvider theme={theme}>
+      <main>
+        <RenderSections blocks={page.layout || []} theme={theme.name} />
+      </main>
+    </ThemeProvider>
   )
 }

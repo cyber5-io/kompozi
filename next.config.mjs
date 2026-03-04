@@ -8,6 +8,7 @@ const nextConfig = {
     '@payloadcms/next',
     '@payloadcms/richtext-lexical',
   ],
+  allowedDevOrigins: ['kompozi.local'],
 }
 
 export default withPayload(nextConfig)

@@ -7,8 +7,8 @@ export type ThemeConfig = {
     accent: string
     background: string
     surface: string
-    text: string
-    textMuted: string
+    foreground: string
+    muted: string
     border: string
   }
   fonts: {

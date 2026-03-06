@@ -9,8 +9,8 @@ const starterTheme: ThemeConfig = {
     accent: '#f59e0b',
     background: '#ffffff',
     surface: '#f8fafc',
-    text: '#0f172a',
-    textMuted: '#64748b',
+    foreground: '#0f172a',
+    muted: '#64748b',
     border: '#e2e8f0',
   },
   fonts: {

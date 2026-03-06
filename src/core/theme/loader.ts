@@ -21,8 +21,8 @@ export function themeToCSS(theme: ThemeConfig): string {
       --color-accent: ${theme.colors.accent};
       --color-background: ${theme.colors.background};
       --color-surface: ${theme.colors.surface};
-      --color-text: ${theme.colors.text};
-      --color-text-muted: ${theme.colors.textMuted};
+      --color-foreground: ${theme.colors.foreground};
+      --color-muted: ${theme.colors.muted};
       --color-border: ${theme.colors.border};
       --font-heading: ${theme.fonts.heading};
       --font-body: ${theme.fonts.body};

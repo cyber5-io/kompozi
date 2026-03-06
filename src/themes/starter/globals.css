@@ -1,16 +1,22 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb;
+  --color-secondary: #7c3aed;
+  --color-accent: #f59e0b;
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-foreground: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --font-heading: 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
 }
 
 body {
   font-family: var(--font-body);
-  color: var(--color-text);
+  color: var(--color-foreground);
   background-color: var(--color-background);
-  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -28,14 +34,4 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.section {
-  padding: 5rem 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
 }

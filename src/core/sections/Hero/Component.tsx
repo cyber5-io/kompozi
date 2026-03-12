@@ -22,6 +22,7 @@ export function HeroSection({ data }: SectionProps) {
 
   return (
     <section
+      data-section="hero"
       className={`relative flex items-center ${isCentered ? 'justify-center text-center' : ''} ${hasImage ? 'min-h-[80vh] text-white' : 'min-h-[60vh]'} py-24 bg-cover bg-center`}
       style={hasImage ? { backgroundImage: `url(${bgUrl})` } : undefined}
     >

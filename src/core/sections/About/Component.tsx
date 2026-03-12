@@ -8,7 +8,7 @@ export function AboutSection({ data }: SectionProps) {
   const isImageLeft = variant === 'imageLeft'
 
   return (
-    <section className="py-20 bg-background">
+    <section data-section="about" className="py-20 bg-background">
       <div
         className={`mx-auto max-w-[1200px] px-6 ${
           isCentered

@@ -5,9 +5,9 @@ import sharp from 'sharp'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
-import { Users } from './src/collections/Users'
-import { Media } from './src/collections/Media'
-import { Pages } from './src/collections/Pages'
+import { Users } from './src/collections/Users.ts'
+import { Media } from './src/collections/Media.ts'
+import { Pages } from './src/collections/Pages.ts'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)

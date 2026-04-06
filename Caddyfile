@@ -1,4 +1,0 @@
-kompozi.local {
-    reverse_proxy kompozi-app:3000
-    tls internal
-}

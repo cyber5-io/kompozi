@@ -8,17 +8,22 @@ Kompozi is a section-based CMS built on Kompozi Framework (Next.js fork) and Kom
 - **Framework:** Kompozi Framework (Next.js fork) + Kompozi Engine (PayloadCMS fork)
 - **Database:** PostgreSQL 16
 - **Styling:** Tailwind CSS v4
+- **Local dev:** tainer (Kompozi project type)
 - **Jira project:** KOMP (Epic: CMS)
-- **Package manager:** yarn
+- **Package manager:** yarn (run inside containers via `tainer yarn`)
 
-## Key Directories
+## Project Structure
 
-- `src/core/sections/` — Section definitions and components
-- `src/core/theme/` — Theme engine (CSS variables + dynamic loading)
-- `src/collections/` — PayloadCMS collections (Users, Media, Pages)
-- `src/themes/` — Theme configs and styles
-- `src/app/(frontend)/` — Public-facing pages
-- `src/app/(payload)/` — Admin panel and API routes
+- `tainer.yaml` — Tainer project config
+- `html/` — App source (mounted into container)
+  - `src/core/sections/` — Section definitions and components
+  - `src/core/theme/` — Theme engine (CSS variables + dynamic loading)
+  - `src/collections/` — PayloadCMS collections (Users, Media, Pages)
+  - `src/themes/` — Theme configs and styles
+  - `src/app/(frontend)/` — Public-facing pages
+  - `src/app/(payload)/` — Admin panel and API routes
+- `data/` — Persistent runtime data (gitignored)
+- `db/` — PostgreSQL data (gitignored)
 
 ## Coding Standards
 

@@ -1,0 +1,10 @@
+version: 1
+project:
+    name: kompozi
+    type: kompozi
+    domain: kompozi.tainer.me
+    auto-open: false
+runtime:
+    node: "22"
+    database: postgres
+    shell: zsh
